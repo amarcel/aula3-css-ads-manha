@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="backend.php" method="post">
+        <h1>Formulário de cadastro</h1>
+        <div>
+            <p>Dados pessoais</p>
+            <label>Nome: </label>
+            <input type="text" name="nome" /><br/>
+            <label>E-mail: </label>
+            <input type="email" name="email" /><br/>
+            <label>Cidade: </label>
+            <input type="text" name="cidade" /><br/>
+            <label>Estado: </label>
+            <select name="estado">
+                <option value=""></option>
+                <option value="PA">PA</option>
+                <option value="AM">AM</option>
+            </select>
+        </div> <!-- Fim dados pessoais -->
+
+        <div>
+            <p>Dados profissionais</p>
+            <label>Cargo pretendido:</label><br/>   
+            <input type="radio" value="1">Analista de sistemas
+            <input type="radio" value="2">Analista de banco de dados
+            <input type="radio" value="3">Analista de suporte
+            <br/><br/>
+            <label>Tecnologias de interesse:</label><br/> 
+            <input type="checkbox" value="1">Java
+            <input type="checkbox" value="2">HTML, CSS
+            <input type="checkbox" value="3">Javascript
+            <input type="checkbox" value="4">SQL
+            <br/><br/>
+            <label>Mini currículo:</label><br/>
+            <textarea name="curriculo" rows="6" cols="50"></textarea>
+        </div> <!-- Fim dados profissionais -->
+
+        <div>
+            <p>Ações</p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+        </div> <!-- Fim Ações -->
+    </form>
+</body>
+</html>
