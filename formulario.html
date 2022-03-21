@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <form action="backend.php" method="post">
         <h1>Formulário de cadastro</h1>
-        <div>
+        <div id="div_pessoal">
             <p>Dados pessoais</p>
             <label>Nome: </label>
-            <input type="text" name="nome" /><br/>
+            <input type="text" name="nome" class="fundo_input" /><br/>
             <label>E-mail: </label>
-            <input type="email" name="email" /><br/>
+            <input type="email" name="email" class="fundo_input" /><br/>
             <label>Cidade: </label>
-            <input type="text" name="cidade" /><br/>
+            <input type="text" name="cidade" class="fundo_input" /><br/>
             <label>Estado: </label>
-            <select name="estado">
+            <select name="estado" class="fundo_input">
                 <option value=""></option>
                 <option value="PA">PA</option>
                 <option value="AM">AM</option>
             </select>
         </div> <!-- Fim dados pessoais -->
 
-        <div>
+        <div id="div_prof">
             <p>Dados profissionais</p>
             <label>Cargo pretendido:</label><br/>   
             <input type="radio" value="1">Analista de sistemas
@@ -39,13 +40,12 @@
             <input type="checkbox" value="4">SQL
             <br/><br/>
             <label>Mini currículo:</label><br/>
-            <textarea name="curriculo" rows="6" cols="50"></textarea>
+            <textarea name="curriculo" rows="6" cols="50" class="fundo_input"></textarea>
         </div> <!-- Fim dados profissionais -->
 
-        <div>
-            <p>Ações</p>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpar" />
+        <div id="div_acoes">
+            <input type="submit" value="Enviar" class="botao_enviar"/>
+            <input type="reset" value="Limpar" class="botao_limpar" />
         </div> <!-- Fim Ações -->
     </form>
 </body>
